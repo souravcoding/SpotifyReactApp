@@ -1,0 +1,65 @@
+.body {
+  flex: 0.8;
+  color: white;
+  overflow-y: overlay;
+  height: 100vh;
+  padding: 30px;
+  background: linear-gradient(rgb(91, 87, 115), rgba(0, 0, 0, 1));
+}
+
+.body_info {
+  display: flex;
+  align-items: flex-end;
+  padding: 10px;
+}
+
+.body_text {
+  flex: 1;
+}
+
+.body_text > h2 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+.body_text > p {
+  font-size: 14px;
+}
+
+.body_info > img {
+  height: 20vw;
+  margin-left: -20px;
+  box-shadow: 0 4px 60px black;
+}
+
+@media (max-width: 720px) {
+  .body_text > h2 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 586px) {
+  .body_text > h2 {
+    font-size: 20px;
+  }
+}
+
+.body_icon {
+  display: flex;
+  align-items: center;
+}
+
+.body_icon > .MuiSvgIcon-root {
+  margin-right: 20px;
+}
+
+.play_icon {
+  font-size: 80px !important;
+  margin-left: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  transition: 100ms All ease-in;
+}
+
+.play_icon:hover {
+  transform: scale(1.2);
+}
